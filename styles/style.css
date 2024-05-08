@@ -6,29 +6,290 @@
   list-style: none;
 }
 
-/* ### Primary
+:root {
+  --darkVioletColor: hsl(256, 26%, 20%);
+  --grayishBlueColor: hsl(216, 30%, 68%);
+  --veryDarkVioletColor: hsl(270, 9%, 17%);
+  --darkGrayishViolet: hsl(273, 4%, 51%);
+  --veryLightGrayColor: hsl(0, 0%, 98%);
+  --hrViolet: #B1A4B5;
+}
 
-- Dark Violet: hsl(256, 26%, 20%)
-- Grayish Blue: hsl(216, 30%, 68%)
+@font-face {
+  font-family: 'DM_Serif_Display';
+  src: url('../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');
+}
 
-### Neutral
+@font-face {
+  font-family: 'Karla';
+  src: url('../fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+}
 
-- Very Dark Violet: hsl(270, 9%, 17%)
-- Dark Grayish Violet: hsl(273, 4%, 51%)
-- Very Light Gray: hsl(0, 0%, 98%) */
 
-/* - Family: [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
-- Weights: 400
+@font-face {
+  font-family: 'Karla-bold';
+  src: url('../fonts/Karla/static/Karla-Bold.ttf') format('truetype');
+  font-weight: 400;
+}
 
-### Body
+h1, h2, h3 {
+  font-family: 'DM_Serif_Display', serif;
+  text-align: center;
+}
 
-- Family: [Karla](https://fonts.google.com/specimen/Karla)
-- Weights: 400, 700 */
+h2, h3 {
+  color: var(--veryDarkVioletColor);
+}
 
-/* font-family: 'DM Serif Display', serif;
-font-family: 'Karla', sans-serif; */
+.white-color {
+  color: white;
+}
 
-/* ### hr
-  border: 3px solid wheat;
-  color: white; */
+p {
+  font-family: 'Karla', serif;
+  text-align: center;
+}
 
+body {
+  width: 375px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.6rem;
+}
+
+nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--darkGrayishViolet);
+}
+
+.icon-hamburger:focus + nav {
+  display: flex;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  z-index: 2;
+  padding-top: 2rem;
+}
+
+nav img {
+  margin-top: 1rem;
+}
+
+nav button:hover {
+  width: 15rem;
+  border: 2px solid white;
+}
+
+header > button {
+  padding: 0;
+}
+
+section.main, section.content .how-we-work {
+  background-color: var(--darkVioletColor);
+  text-align: center;
+}
+
+.intro {
+  width: 100%;
+}
+
+.main div {
+  position: relative;
+}
+
+.bg-intro-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+}
+
+.bg-intro-right {
+  position: absolute;
+  bottom: -11rem;
+  right: 0;
+  width: 33%;
+}
+
+.main h1 {
+  font-size: 2.7rem;
+  line-height: 1.1;
+  padding: 5rem 2.2rem 0 2.2rem;
+}
+
+.main p {
+  font-size: 0.95rem;
+  padding: 1rem 2.2rem 2rem 2.2rem;
+  line-height: 1.5;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+section button {
+  background-color: var(--darkVioletColor);
+  border: 2px solid white;
+  margin-bottom: 6rem;
+}
+
+nav button {
+  background-color: var(--darkGrayishViolet);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+section.content {
+  padding-top: 9rem;
+}
+
+.content hr {
+  height: 2px;
+  width: 40%;
+  background-color: var(--hrViolet);
+  margin: 0 auto 2rem;
+}
+
+.content h2 {
+  font-size: 2.7rem;
+}
+
+.content h3 {
+  font-size: 1.6rem;
+}
+
+.content p {
+  color: var(--darkVioletColor);
+}
+
+.content .container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 5rem 1.6rem;
+}
+
+.icon1 {
+  background-image: url("../Starterkit/images/icon-snappy-process.svg");
+}
+
+.icon2 {
+  background-image: url("../Starterkit/images/icon-affordable-prices.svg");
+}
+
+.icon3 {
+  background-image: url("../Starterkit/images/icon-people-first.svg");
+}
+
+.container .box {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon1, .icon2, .icon3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+.how-we-work {
+  position: relative;
+  margin: 9rem 1.5rem;
+}
+
+.bg-how-we-work {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+}
+
+.how-we-work h2 {
+  padding: 2rem 0;
+}
+
+.first-layer {
+  z-index: 1;
+}
+
+.second-layer {
+  position: relative;
+  z-index: 2;
+}
+
+footer {
+  background-color: var(--veryLightGrayColor);
+}
+
+footer .main-box {
+  padding: 6rem 1rem 4rem 1rem;
+}
+
+.bg-social-media {
+  position: absolute;
+}
+
+footer .social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--darkGrayishViolet);
+  margin: 1.5rem 0;
+}
+
+.bottom-menu.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  margin-top: 2rem;
+}
+
+ul, h4 {
+  font-family: "Karla-bold", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 1px;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: var(--hrViolet);
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+
+  @font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+    font-weight: 600;
+  }
+}

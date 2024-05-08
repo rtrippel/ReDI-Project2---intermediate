@@ -1,93 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="Starterkit/images/favicon-32x32.png">
-  <title>Project 2 /-|-\ Insure landing page</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="Starterkit/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <title>Project 2 /-|-\ Insure landing page</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="Starterkit/images/favicon-32x32.png" rel="icon" type="image/x-icon">
 </head>
 
 <body>
 <header>
-  <img src="Starterkit/images/logo.svg" alt="logo">
-  <img src="Starterkit/images/icon-hamburger.svg" alt="icon-hamburger">
-  <nav>
-    How we work
-    Blog
-    Account
-    View plans
-  </nav>
+    <img alt="logo" src="Starterkit/images/logo.svg">
+    <button type="button" class="icon-hamburger">
+        <img alt="icon-hamburger" src="Starterkit/images/icon-hamburger.svg">
+    </button>
+    <nav>
+        <button class="nav-buttons white-color">How we work</button>
+        <button class="nav-buttons white-color">Blog</button>
+        <button class="nav-buttons white-color">Account</button>
+        <button class="nav-buttons white-color">View plans</button>
+        <img alt="bg-mobile-nav" class="bg-mobile-nav" src="Starterkit/images/bg-pattern-mobile-nav.svg">
+    </nav>
 </header>
 
-<section class="main">
-  Humanizing your insurance.
-
-  Get your life insurance coverage easier and faster. We blend our expertise
-  and technology to help you find the plan that’s right for you. Ensure you
-  and your loved ones are protected.
-
-  <button>
-    View plans
-  </button>
+<section class="main white-color">
+    <img alt="intro" class="intro" src="Starterkit/images/image-intro-desktop.jpg">
+    <div>
+        <img alt="bg-intro-left" class="bg-intro-left" src="Starterkit/images/bg-pattern-intro-left-mobile.svg">
+        <img alt="bg-intro-right" class="bg-intro-right" src="Starterkit/images/bg-pattern-intro-right-mobile.svg">
+        <h1>Humanizing your insurance.</h1>
+        <p>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find
+            the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+        <button class="plans white-color">View plans</button>
+    </div>
 </section>
 
 <section class="content">
-  <h2>We’re different</h2>
-  <div>
-    Snappy Process
+    <hr>
+    <h2>We’re different</h2>
+    <div class="container">
+        <div class="box">
+            <div class="icon1"></div>
+            <h3>Snappy Process</h3>
+            <p>Our application process can be completed in minutes, not hours. Don’t get
+                stuck filling in tedious forms.</p>
+        </div>
+        <div class="box">
+            <div class="icon2"></div>
+            <h3>Affordable Prices</h3>
+            <p>We don’t want you worrying about high monthly costs. Our prices may be low,
+                but we still offer the best coverage possible.</p>
+        </div>
+        <div class="box">
+            <div class="icon3"></div>
+            <h3>People First</h3>
+            <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
+                sure you’re covered when you need it.</p>
+        </div>
+    </div>
 
-    Our application process can be completed in minutes, not hours. Don’t get
-    stuck filling in tedious forms.
-  </div>
-  <div>
-    Affordable Prices
-
-    We don’t want you worrying about high monthly costs. Our prices may be low,
-    but we still offer the best coverage possible.
-  </div>
-  <div>
-    People First
-
-    Our plans aren’t full of conditions and clauses to prevent payouts. We make
-    sure you’re covered when you need it.
-  </div>
-
-
-  <div>
-    Find out more about how we work
-    <button>
-      How we work
-    </button>
-  </div>
-
+    <div class="how-we-work">
+        <img alt="bg-how-we-work" class="bg-how-we-work first-layer"
+             src="Starterkit/images/bg-pattern-how-we-work-mobile.svg">
+        <div class="second-layer">
+            <h2 class="white-color">Find out more about how we work</h2>
+            <button>How we work</button>
+        </div>
+    </div>
 </section>
 
-<footer>
-  <div class="social-media">
+<footer class="container">
+    <img alt="bg-social-media" class="bg-social-media first-layer" src="Starterkit/images/bg-pattern-footer-mobile.svg">
+    <div class="main-box second-layer">
+        <div class="social-media box">
+            <img alt="logo-footer" class="logo-footer" src="Starterkit/images/logo.svg">
+            <div class="social-media-icons container">
+                <img alt="icon-facebook" src="Starterkit/images/icon-facebook.svg">
+                <img alt="icon-twitter" src="Starterkit/images/icon-twitter.svg">
+                <img alt="icon-pinterest" src="Starterkit/images/icon-pinterest.svg">
+                <img alt="icon-instagram" src="Starterkit/images/icon-instagram.svg">
+            </div>
+            <hr>
+        </div>
 
-  </div>
-  <div class="bottom-menu">
+        <div class="bottom-menu container">
 
+            <div class="box">
+                <h4>Our company</h4>
+                <ul>
+                    <li>How we work</li>
+                    <li>Why Insure?</li>
+                    <li>View plans</li>
+                    <li>Reviews</li>
+                </ul>
+            </div>
 
-    Help me
+            <div class="box">
+                <h4>Help me</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Terms of use</li>
+                    <li>Privacy policy</li>
+                    <li>Cookies</li>
+                </ul>
+            </div>
 
-    FAQ
-    Terms of use
-    Privacy policy
-    Cookies
+            <div class="box">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Sales</li>
+                    <li>Support</li>
+                    <li>Live chat</li>
+                </ul>
+            </div>
 
-    Contact
-
-    Sales
-    Support
-    Live chat
-
-    Others
-
-    Careers
-    Press
-    Licenses
-  </div>
+            <div class="box">
+                <h4>Others</h4>
+                <ul>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Licenses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

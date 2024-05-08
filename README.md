@@ -1,5 +1,7 @@
 # **Project 2**   /-|-\  _Insure landing page_
 
+### [This site is live here](https://rtrippel.github.io/ReDI-Project2---intermediate/)
+
 ## Technologien
     -   HTML5
     -   CSS
@@ -9,7 +11,7 @@
 
 Roman Trippel
 
-**e-mail:** [rtrippel84@gmail.com](mailto:rtrippel84@gmail.com)
+**e-mail:** [mail@romantrippel.com](mailto:mail@romantrippel.com)
 
 
 **LinkedIn:** [www.linkedin.com/in/roman-trippel](https://www.linkedin.com/in/roman-trippel)
